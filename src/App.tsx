@@ -1,4 +1,5 @@
 import { useState } from 'react';
+// @ts-ignore
 import confetti from 'canvas-confetti';
 import { Heart, Stars } from 'lucide-react';
 import { EvasiveButton } from './components/EvasiveButton';
@@ -36,16 +37,14 @@ export default function App() {
         angle: 60,
         spread: 55,
         origin: { x: 0 },
-        colors: ['#e11d48', '#fda4af', '#ffffff'],
-        shapes: ['heart']
+        colors: ['#e11d48', '#fda4af', '#ffffff']
       });
       confetti({
         particleCount: 5,
         angle: 120,
         spread: 55,
         origin: { x: 1 },
-        colors: ['#e11d48', '#fda4af', '#ffffff'],
-        shapes: ['heart']
+        colors: ['#e11d48', '#fda4af', '#ffffff']
       });
 
       if (Date.now() < end) {
